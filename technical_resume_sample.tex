@@ -1,0 +1,202 @@
+%-------------------------
+% Resume in Latex
+% Author : Rahul Thapa
+% Website: 
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{mathptmx}
+\usepackage{enumitem}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+
+\newcommand*{\img}[1]{%
+    \raisebox{-.3\baselineskip}{%
+        \includegraphics[
+        height=\baselineskip,
+        width=\baselineskip,
+        keepaspectratio,
+        ]{#1}%
+    }%
+}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{center}
+    {\LARGE \textbf{RAHUL THAPA}}\\
+800 E Lancaster Ave, Villanova, PA, 19085\\
+  \href{mailto:rthapa@villanova.edu}{rthapa@villanova.edu} $\vert$ \href{https://github.com/ThapaRahul}{https://github.com/ThapaRahul} $\vert$ (682) 702-9256 \\
+\end{center} 
+
+
+
+%-----------EDUCATION-----------------
+\section{\textbf{EDUCATION}}
+      \textbf{Bachelor of Science in Computer Science, Villanova University, Villanova, PA}
+      \null\hfill {\textbf{May 2021}}
+      \itemsep0em
+      \begin{itemize}
+      \itemsep0em
+          \item \normalfont Minor in Physics and Mathematics, GPA: 4.00/4.00, Dean's List since Freshman, Honors Ambassador
+      \end{itemize}
+      {\textbf{Higher Secondary Education, SOS Hermann Gmeiner School Bharatpur, Nepal}}
+      \null\hfill {\textbf{May 2015}}
+      \begin{itemize}
+      \itemsep0em
+          \item {\normalfont Science and Mathematics;  GPA: 4.00 Unweighted}
+      \end{itemize}
+  
+%--------PROGRAMMING LANGUAGES---------
+\section{\textbf{TECHNICAL SKILLS}}
+    \begin{itemize}
+    \itemsep0em
+        \item 
+            {\textbf{Programming Languages}: (proficient) - Python and Java; (intermediate) - JavaScript, Oracle SQL, NodeJS, C; (beginner) - Matlab, CSS, HTML}
+        \item
+            {\textbf{Technologies}: (proficient) - Git, GitHub, Tensorflow, Matplotlib, Numpy; (beginner) -  React-Redux, Mongodb}
+    \end{itemize}
+
+
+  
+%-----------EXPERIENCE-----------------
+\section{\textbf{EXPERIENCE}}
+    %   {\textbf {Computer Science Peer Tutor}, Villanova University, Villanova, PA} 
+    %   \null\hfill \textbf{Jan 2019 - Present}
+    %   \begin{itemize}
+    %   \itemsep0em 
+    %       \item {Mentoring freshmen and sophomores on Algorithm and Data Structures and Discrete Mathematics.}
+    %   \end{itemize}
+            
+
+      {\textbf{Research Intern (REU)}, University of California Irvine, Irvine, CA} 
+      \null\hfill \textbf{Jun 2019 - Aug 2019}
+      \begin{itemize}
+      \itemsep0em 
+          \item
+            {Created correlation matrix and scatter plots from multimodal timeseries data from Unmanned Aerial Vehicle (UAV) and merged the data based on average value using Python.}
+        \item
+            {Designed mutual information based algorithm using mRMR and sckit-learn to select 10 best features from over 100 features.}
+        \item
+            {Modeled a Recurrent Neural Network (RNN) with Long Short-Term Memory (LSTM) layer to predict high capture-to-control delay using sequence-to-sequence based approach.}
+        \item
+            {Obtained 80\% precision and 73\% recall on a highly skewed and limited training set.}
+      \end{itemize}
+      
+      {\textbf{Freshman Match/Summer Research Assistant}, Villanova University, Villanova, PA}
+      \null\hfill \textbf{Jan 2018 - Aug 2018}
+      \begin{itemize}
+      \itemsep0em 
+          \item
+            {Created histogram of relative orientation between the magnetic field and the intensity gradient and visualized their alignment in Orion Nebula using Python packages such as Matplotlib and Seaborn.}
+        \item
+            {Modeled a Red Blue Green image of Orion Nebula and plotted 4 band vectors over the intensity map using Python package APLpy.}
+      \end{itemize}
+
+
+%-----------PROJECTS-----------------
+\section{\textbf{PERSONAL/CLASS PROJECTS}}
+        {\textbf{VuShares} (Ongoing Startup): Developing web application for students to buy and sell unused dormitory items and also exchange services directly. Venture funded by Villanova ICE Innovation Fund. 
+        \begin{itemize}
+            \itemsep0em 
+            \item Designed a prototype using React.js for frontend and Node.js for backend and HTML/CSS/Bootstrap.
+            \item Currently working on testing the prototype through surveys, user-stories, and cost-benegit analysis.   
+        \end{itemize}
+        % {\textbf{Car Detecting System}: Modeled a car detecting algorithm implementing You Only Look Once (\textbf{YOLO}) algorithm\\ using car detection dataset from drive.ai. Obtained \textbf{79\%} accuracy.}\\
+        {\textbf{E-Waste Management}: Designed a database that allows users to buy and sell their old and unused electronic devices.}
+        \begin{itemize}
+            \itemsep0em 
+            \item Designed mind maps, ER model, and Relational model using Lucidchart.
+            \item Modeled mechanism for performing CRUD operation on the database using Oracle SQL. 
+        \end{itemize}
+        % {\textbf{BlackJack}: Created a basic desktop game of blackjack using \textbf{JavaFx/Java}. Implemented Arraylist along with \textbf{JSON} object and Deck of card \textbf{API} to extract the card.}
+%     \resumeSubItem{Mac Setup}
+%       {Book that gives step by step instructions on setting up developer environment on Mac OS.}
+
+%
+%--------Awards and Leaderships------------
+ 
+\section{\textbf{AWARDS \& LEADERSHIPS}}
+
+    \begin{itemize}
+        \itemsep0em
+            \item {\textbf{ICE Innovation Fund, 2019}: Awarded with Villanova ICE center Innovation fund worth \$250 for funding the build phase of my startup called VuShares.}
+            % \item 
+            %     {\textbf{Sigma Pi Sigma Member, 2019}: Inducted into SPS honor society based on academic excellence in Physics.}
+            \item 
+                {\textbf{Creative Idea Award, Blockchain Hackathon 2019, R3}: Formulated and presented idea to alleviate poverty in the U.S by tokenizing and distributing unused meal swipes from students in colleges to homeless shelters using Corda.}
+            \item
+                {\textbf{1$^{st}$ Runner up, Hackathon 2018, Lockheed Martin }: Led a team of 6 peers to make electronic piano using Arduino.}
+            \item 
+                {\textbf{Resident Assistant (RA)}: Oversee 50 residents, organize community building events, and promote safety.}
+            % \item
+            %     {\textbf{The John P. Harkins'29 Endowed Scholarship}: Awards \$24,000/year based on academic excellence.}
+    \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
